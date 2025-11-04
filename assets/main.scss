@@ -1,0 +1,15 @@
+---
+---
+
+// This line imports all the default Minima theme styles
+@import "minima";
+
+// This is your new custom style for the box
+#markdown-toc {
+  background-color: #f7f7f7; // A light grey background
+  border: 1px solid #e0e0e0; // A subtle border
+  padding: 1em 1.5em;         // Some space inside the box
+  border-radius: 5px;         // Nice rounded corners
+  width: fit-content;      // Makes the box width shrink to fit its content
+  margin-left: 0;          // Removes the default browser indent for lists
+}

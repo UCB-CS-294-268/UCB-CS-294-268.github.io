@@ -1,0 +1,13 @@
+<ul>
+  {% assign sorted_lectures = site.lectures | sort: "date" %}
+  {% for lec in sorted_lectures %}
+    <li>
+      <!--- Alternately use "%b %d" for "Jan 23" format -->
+      ({{ lec.date | date: "%m/%d" }})
+      <a href="{{ lec.url | relative_url }}">{{ lec.title }}</a>
+      {% if lec.slides_url %}
+        (<a href="{{ lec.slides_url | relative_url }}">Slides</a>)
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

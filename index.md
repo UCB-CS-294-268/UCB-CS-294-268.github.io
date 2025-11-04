@@ -3,41 +3,44 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Proving TCS and Math Theorems in Lean
 ---
 
-# CS 294-268: Proving TCS and Math Theorems in Lean, Spring 2026
+<!-- # Proving TCS and Math Theorems in Lean -->
 
 **Instructor:** [Venkatesan Guruswami](https://people.eecs.berkeley.edu/~venkatg)  
-**Lecture time:** Friday 13:00–14:59, SODA 320  
+**Lecture time:** Friday 13:00–14:59  
+**Location:** SODA 320  
 **TA:** [Shilun (Allan) Li](https://shilun-allan-li.github.io/)  
 **Office hours:** Venkat: TBD; Shilun: TBD  
 
----
+* TOC
+{:toc}
 
-### Course Description
+## Course Description
 
-This course introduces the use of the Lean 4 proof assistant to formalize concepts and results from theoretical computer science and mathematics. The first part of the course covers the fundamentals of Lean 4, including its logical foundations, core syntax, and proof tactics, through guided exercises and examples.
+This course introduces the use of the [Lean 4](https://lean-lang.org/) proof
+assistant to formalize concepts and results from theoretical computer science
+and mathematics. The first part of the course covers the fundamentals of Lean 4,
+including its logical foundations, core syntax, and proof tactics, through
+guided exercises and examples.
 
-Students will then form small groups and undertake a semester-long formalization project on a selected topic, such as automata theory, computability, complexity theory, or combinatorics. The course emphasizes hands-on engagement with Lean and aims to provide students with practical experience in mechanized reasoning and formal proof development.
+Students will then form small groups and undertake a semester-long formalization
+project on a selected topic, such as automata theory, computability, complexity
+theory, or combinatorics. The course emphasizes hands-on engagement with Lean
+and aims to provide students with practical experience in mechanized reasoning
+and formal proof development.
 
----
-
-### Grading
+## Grading
 TBD
 
----
+## Lectures
+{% include lecture-list.html %}
 
-### Course Materials / Text
+## Problem Sets
 TBD
 
----
-
-### Problem Sets
-TBD
-
----
-
-### Additional References
+## Additional References
 
 Some resources that could be useful for the course:
 
@@ -49,5 +52,3 @@ Some resources that could be useful for the course:
 - Search engine for Lean 4: [Loodle!](https://loogle.lean-lang.org/)
 - Documentation for [mathlib4](https://leanprover-community.github.io/mathlib4_docs/Mathlib)
 - Lean community [Zulip channel](https://leanprover.zulipchat.com/) for questions and discussions
-
----

@@ -1,3 +1,10 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
 # CS 294-268: Proving TCS and Math Theorems in Lean, Spring 2026
 
 **Instructor:** [Venkatesan Guruswami](https://people.eecs.berkeley.edu/~venkatg)  

@@ -6,8 +6,6 @@ layout: home
 title: Proving TCS and Math Theorems in Lean
 ---
 
-<!-- # Proving TCS and Math Theorems in Lean -->
-
 **Instructor:** [Venkatesan Guruswami](https://people.eecs.berkeley.edu/~venkatg)  
 **Lecture time:** Friday 13:00–14:59  
 **Location:** SODA 320  
@@ -44,11 +42,20 @@ TBD
 
 Some resources that could be useful for the course:
 
-- Y. Filmus’ course webpage: [Proving theorems in Lean](https://yuvalfilmus.cs.technion.ac.il/courses/?crid=1777)
-- S. Gadgil’s course webpage: [Proofs and Programs](https://math.iisc.ac.in/~gadgil/proofs-and-programs-2025/index.html), an introduction to interactive theorem proving using Lean.
-- H. Macbeth’s book: [The Mechanics of Proof](https://hrmacbeth.github.io/math2001/)
-- J. Avigad and P. Massot’s book: [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)
-- [EPFL Lean mini course](https://github.com/b-mehta/epfl-comb), adapted from *Mathematics in Lean* and the [Lean for the Curious Mathematician 2023 workshop](https://lftcm2023.github.io/)
-- Search engine for Lean 4: [Loodle!](https://loogle.lean-lang.org/)
-- Documentation for [mathlib4](https://leanprover-community.github.io/mathlib4_docs/Mathlib)
-- Lean community [Zulip channel](https://leanprover.zulipchat.com/) for questions and discussions
+- [Proving theorems in Lean](https://yuvalfilmus.cs.technion.ac.il/courses/?crid=1777):
+Course by [Yuval Filmus](https://yuvalfilmus.cs.technion.ac.il/).
+- [Proofs and Programs](https://math.iisc.ac.in/~gadgil/proofs-and-programs-2025/index.html):
+Course on introduction to interactive theorem proving using Lean by [Siddhartha Gadgil](https://math.iisc.ac.in/~gadgil/).
+- [The Mechanics of Proof](https://hrmacbeth.github.io/math2001/):
+Book by [Heather Macbeth](https://www.ma.imperial.ac.uk/~hmacbeth/).
+- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/):
+Book by [Jeremy Avigad](https://www.andrew.cmu.edu/user/avigad/),
+[Patrick Massot](https://www.imo.universite-paris-saclay.fr/~patrick.massot/en/).
+- [EPFL Lean mini course](https://github.com/b-mehta/epfl-comb):
+Adapted from *Mathematics in Lean* and the
+[Lean for the Curious Mathematician 2023 workshop](https://lftcm2023.github.io/).
+- [Loodle!](https://loogle.lean-lang.org/): Search engine for Lean 4.
+- [mathlib4](https://leanprover-community.github.io/mathlib4_docs/Mathlib)
+documentation.
+- Lean community [Zulip channel](https://leanprover.zulipchat.com/) for
+questions and discussions.

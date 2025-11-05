@@ -13,7 +13,14 @@ This is the title slide.
 # About This Course
 
 - Point 1
+
+--
+
 - Point 2
+
+--
+
+- Point 3
 
 ---
 

@@ -7,6 +7,7 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
+  <p><b>Date:</b> {{ page.date | date: "%B %d, %Y" }}</p>
   {% if page.slides_url %}
     <div style="margin-bottom: 1.5em;">
       <strong><a href="{{ page.slides_url | relative_url }}">Link to Slides</a></strong>

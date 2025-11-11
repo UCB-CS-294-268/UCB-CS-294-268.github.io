@@ -6,11 +6,11 @@ layout: home
 title: Proving TCS and Math Theorems in Lean
 ---
 
-**Instructor:** [Venkatesan Guruswami](https://people.eecs.berkeley.edu/~venkatg)  
+**Instructor:** [Venkatesan Guruswami](https://people.eecs.berkeley.edu/~venkatg) and [Pritish Kamath](https://pritishkamath.github.io)  
 **Lecture time:** Friday 13:00–14:59  
 **Location:** SODA 320  
 **TA:** [Shilun (Allan) Li](https://shilun-allan-li.github.io/)  
-**Office hours:** Venkat: TBD; Shilun: TBD  
+**Office hours:** Venkat: TBD; Pritish: TBD; Shilun: TBD  
 
 * TOC
 {:toc}

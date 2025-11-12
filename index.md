@@ -6,9 +6,10 @@ layout: home
 title: Proving TCS and Math Theorems in Lean
 ---
 
-**Instructor:** [Venkatesan Guruswami](https://people.eecs.berkeley.edu/~venkatg) and [Pritish Kamath](https://pritishkamath.github.io)  
-**Lecture time:** Friday 13:00–14:59  
+**Instructor:** [Venkatesan Guruswami](https://people.eecs.berkeley.edu/~venkatg)  
+**Lecture time:** Friday 13:00–15:00  
 **Location:** SODA 320  
+**Guest Lecturer:** [Pritish Kamath](https://pritishkamath.github.io)  
 **TA:** [Shilun (Allan) Li](https://shilun-allan-li.github.io/)  
 **Office hours:** Venkat: TBD; Pritish: TBD; Shilun: TBD  
 
@@ -41,7 +42,7 @@ TBD
 ## Additional References
 
 Some resources that could be useful for the course:
-
+- [Online Lean4 IDE](https://live.lean-lang.org/) with latest mathlib4.
 - [Proving theorems in Lean](https://yuvalfilmus.cs.technion.ac.il/courses/?crid=1777):
 Course by [Yuval Filmus](https://yuvalfilmus.cs.technion.ac.il/).
 - [Proofs and Programs](https://math.iisc.ac.in/~gadgil/proofs-and-programs-2025/index.html):

@@ -20,7 +20,7 @@ title: Proving TCS and Math Theorems in Lean
 
 This course introduces the use of the [Lean 4](https://lean-lang.org/) proof
 assistant to formalize concepts and results from theoretical computer science
-and mathematics. The first part of the course covers the fundamentals of Lean 4,
+and related mathematics. The first part of the course covers the fundamentals of Lean 4,
 including its logical foundations, core syntax, and proof tactics, through
 guided exercises and examples.
 

@@ -11,7 +11,7 @@ title: Proving TCS and Math Theorems in Lean
 **Location:** SODA 320  
 **Guest Lecturer:** [Pritish Kamath](https://pritishkamath.github.io)  
 **TA:** [Shilun (Allan) Li](https://shilun-allan-li.github.io/)  
-**Office hours:** Venkat: TBD; Pritish: TBD; Shilun: TBD  
+**Office hours:** Venkat: TBD; Shilun: TBD  
 
 * TOC
 {:toc}

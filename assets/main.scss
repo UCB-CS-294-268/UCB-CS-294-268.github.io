@@ -13,3 +13,56 @@
   width: fit-content;      // Makes the box width shrink to fit its content
   margin-left: 0;          // Removes the default browser indent for lists
 }
+
+/* The container for a code block */
+pre.highlight {
+  position: relative;
+  overflow: visible !important; /* Prevents the button from being clipped */
+  padding-right: 40px;          /* Adds a gutter so code doesn't hide under the button */
+}
+
+/* The Copy Button (Icon version) */
+.copy-code-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  
+  /* Force a small square shape */
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  
+  /* Center the SVG icon perfectly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background: #f8f9fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  color: #57606a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 100;
+}
+
+/* Hover effect for the button */
+.copy-code-button:hover {
+  background-color: #f3f4f6;
+  color: #0969da;
+  border-color: #d0d7de;
+}
+
+/* Feedback State: When the code is copied */
+.copy-code-button.copied {
+  color: #1a7f37;
+  background-color: #f0fff4;
+  border-color: #2da44e;
+}
+
+/* Force the SVG to stay small and not inherit large line-heights */
+.copy-code-button svg {
+  width: 16px;
+  height: 16px;
+  pointer-events: none; /* Ensures the click registers on the button, not the path */
+}

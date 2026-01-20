@@ -6,7 +6,10 @@
       ({{ lec.date | date: "%m/%d" }})
       <a href="{{ lec.url | relative_url }}">{{ lec.title }}</a>
       {% if lec.slides_url %}
-        (<a href="{{ lec.slides_url | relative_url }}">Slides</a>)
+        [<a href="{{ lec.slides_url | relative_url }}">Slides</a>]
+      {% endif %}
+      {% if lec.demo_url %}
+        [<a href="{{ lec.demo_url | relative_url }}">Demo</a>]
       {% endif %}
     </li>
   {% endfor %}

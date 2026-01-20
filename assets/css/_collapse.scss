@@ -1,0 +1,40 @@
+/* Global Toggle Button */
+#global-toggle-btn {
+  display: block;
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333;
+  transition: background 0.2s;
+}
+
+#global-toggle-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Makes the header look like a button */
+.collapsible-header {
+  user-select: none;
+  border-bottom: 2px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+
+.collapsible-header:hover {
+  opacity: 0.8;
+  color: #0076df; /* Change to your theme color */
+}
+
+/* Optional: smooth fade in for content */
+.section-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

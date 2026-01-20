@@ -8,11 +8,15 @@ layout: default
   </header>
 
   <p><b>Date:</b> {{ page.date | date: "%B %d, %Y" }}</p>
-  {% if page.slides_url %}
-    <div style="margin-bottom: 1.5em;">
-      <strong><a href="{{ page.slides_url | relative_url }}">Link to Slides</a></strong>
-    </div>
-  {% endif %}
+  <div style="margin-bottom: 1em;">
+    <b>Links:</b>
+    {% if page.slides_url %}
+    <strong>[<a href="{{ page.slides_url | relative_url }}">Slides</a>]</strong>
+    {% endif %}
+    {% if page.demo_url %}
+      <strong>[<a href="{{ page.demo_url | relative_url }}">Demo</a>]</strong>
+    {% endif %}
+  </div>
 
   <div class="post-content">
     {{ content }}

@@ -35,9 +35,9 @@ and aims to provide students with practical experience in mechanized reasoning
 and formal proof development.
 
 ## Grading
-Class Participation 15%<br>
-Homework 35%<br>
-Final Project 50% 
+Class Participation 10%<br>
+Homework 30%<br>
+Final Project 60% 
 
 ## Lectures
 {% include lecture-list.html %}

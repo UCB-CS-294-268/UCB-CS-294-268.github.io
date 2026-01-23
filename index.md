@@ -44,9 +44,9 @@ Final Project 50%
 
 ## Problem Sets
 <!-- - [Problem Set 1 (Lean file)](/LeanSource/PSets/PSet1.lean) -->
-- **PS1 (Due 02/10)**:
+<!-- - **PS1 (Due 02/10)**:
   [[Download]](/LeanSource/PSets/PSet1.lean)
-  · [View on GitHub](https://github.com/...)
+  · [View on GitHub](https://github.com/...) -->
 
 ## Additional References
 

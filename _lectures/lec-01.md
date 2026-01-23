@@ -1,29 +1,24 @@
 ---
 layout: lecture
-title: "Lecture 1: Syntax, Goals & Tactics"
+title: "Lecture 1: Syntax, Formalization, Goals & Tactics"
 date: 2026-01-23
 slides_url: https://docs.google.com/presentation/d/1zfPAqFHUYklI_ZA3TF1IO7hFyTTQfFoJBE7cW4x0oVM/edit?usp=sharing
-demo_url: https://live.lean-lang.org/#codez=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
+demo_url: https://live.lean-lang.org/#codez=LQ3AEAqBOCGB2BnAlgU3gF3AYQPYFt8EATRcMUAKEoGIBjAC1ToGtwBWcL7n8iQVEJaqAG6wANh15S+HavSatwAIgASqMWNxLeIcAGUM0ZPADmcxszYBtAIwAacACYHAZgC63XQBlkiLADlYDGoAel1/AFd8ACNUaHBcADNwWAAHVLFUMmNwaNhEFlRgykgGX3BiXDo/I1NwRAZcAHcyCNTwJqZ4cEbhOOMTBL74gAN4KIBBdMzEEYA6SmAQymJUZPH8KYys8AAucECsXYBeWVoLRQ2tmaFRCSvprNpU2qwH7cRzBTZDqV1IACeqVQ52+UCBqB0EEBwPANlBlnBsJsnmhEKcX0RPj8ByCCMU2OKiwoEAAQsZVtBEPsAKIADwyyDoyAwDgAkvhGcysAAycBspAYBB0SEk4DUVbJZIACjpe1xGAAlOBpQD5YdlftfidwHKAFTgAHUDBMXDQVD4cDGGkARxVsFy4Do6qCyulDHl0XAAB4nZqUuAANSO30O4POnXRI1cVB02B0AJBOawYjEAD6YgwaZT6cyiSwHtgmMUiVu4nAyUc4BcXF0ADYJWtwINpYBG4HlMNQbod+1b/vbOqLZYkg1+7EbyRMAHJwABvAdI1AAX3t8r7a72pyHNBE5enZ2JFSbJnQ/ToE1Tc4XnZX0odXt7/c3AeDXpkNIASh+APIfgCEKzHqeRjnpe84dhCK5WBexDgK2Hh3o6j4boOQa5NQYrgCMNQRAmETmiM4AYBCZDSkoAAK0C4MQuEYEoypitQOF4ea4AfswQqmJkHRMOalBcE0yDECa8oAGKaHiXBMMgJgMEc4DibgeLUPAsD4FkqTxpC7EJggJiZNQXBhBAEzmg6SREUw4DmrpXGoHM5DLFwkopGZKrQPsOmcfpXZiRJRynNAcyCcJHoGkF0mycURm6OR/TqRgcQJMkJqQjZ3mZA5Sz8UeyTAkYCVJdKHlsRxemZP6ilBM+VYGsVwVCSJwYRagMlyYq1DoLBXnlSCgHJPEnllXZz6zh0jUejqjhzAADA4kVyc+LizeAS5yLuEhBbAbnSPWs0zQdw7WXM+XIIV8S1hANgzfth3EhQWEUrRyB9IRxHAqRSh6FE9F8BQoS6BM3ToFEcRBC9kLvZCiRmhUsAAmQFmpR0qCoCwWXLE9CYQ+AAAi8M8XEIJcAAPvUETwMQ8M5WT+C4JT1Ok0RERZFT0bgGTTSoMQ8Cs4zHOWfhiBszTFZGCLTOIEE+Ei/ibD4wCcyIBTbOonj8NKyrBP7ArKlqRpWnq+zxkHLGWCq0jVlc2jGM5S5vN0hgCsqqrOvw/6zsnDlXBEBgjBw2qgkmt7AvKwzarHAAfOAdPhyHtP06rUfM3z7NMxgLPCwTydczzqfxyjedZxH0cmkLEvcGTZdUkn0eJOL/NM/XQnZ9HUsZ9AFeS9Lnet+TcddUb613Ebmvh3MDtOwTl2j7Hssm0DVqU89fREeiMPxIc+HlhssRUrblBYxgONb3AEidETosAF5xLgovK3QEYKtvEiAEmEz9n8WPw9+ImuPx/v8b5UXAKcU+gDb5/zoADEy3Qj44yhhWWGs45pwiXAAPT1LbOBq9yTwAMPEC+fEmaoFSJ8JmQDcD7Fwfg8A79qGGFFvTVAVDjA0OANHeh0Av7gE4XMEhnx5CIl4fwuYFC5Y8NYYYPhpDREQKYRhEk+gCCQnpGpD4S8oCmnNJaUSZoiBiGQFfcG9M/pgGNFoi09QzrbDTL7SaTg0KcFOAAdmfFGHK0BEgSF0EodiXjYwvRZACbQ0ooy5WMCyZA9MHCpTVNtSEqAbQRHEB1aBCk4i+ynGQLw+QsClFQGaC0ttUqFMtIkDJQREA5L8Pk0pOVpTdHvE6F0SoVQMG6Psbo0dHBugYD2AM0cZq9IfI6QZvSn7OjGZQXYOVYBoO6K+eZ4BAAGRE6eZ0zTjuK4IgM00A1QyEorgCy5QMC4FyNDZAGhuYAWgTlZW+BRLICpBgfwDTlSnHuWmWcLBjgzXQd0FgixlguXuY855/gVQdIVJqY4OVfb+26EHBgosZogMGaLNgwYUTJ1BU8vwELMXgEJfCSgxl+L3L0Ik6UiQHDwHeeTfAXyfl/KWYkaULAOrZRBVESldpwL7BvOAaCl54IqmSFqaq791wNJaTCuFQQEXjWDkzVFydkgzVFrBLFaKGW8orBUNCMotVwlSSbdiHckD1CSfE5KllITGFSBELAIw6TzC5U2RA1rWL8sXFBAAshECQorZRrhhbqcABo6TD3LBSxJVrkmsRrDIGwAAWFUpwUTBjTcGAAnKa3Qnzvm/P+USkB4Buh1QWSaiNKparlrQjYZUIRwB1mKRYy0nykhpk9QmnYMqJWtJmVwOsNbY12h7Ta7opwK2QobcqOqdaq2NrcezOBJjEUsmReQ2+OrPFiHvrhZ0sEGCwRxbso0tyuD5JwLgDQQQr7gD9WkfYyB1hWjICIdAtKQjOHAOoRAkIXBLoWO65IdBb1iHvU+9o/boUtM3DlV99aACkDjjinFRaleAIdujNscDlf9xNuA1gNEuy9pULVkGSGkRk3MDXH3Uojbo8AFhcH8LgRK+wBTgC8KgBAWT6icSpp3cABjohwD2TEso2QyAjEOHMFkYNErzCBf1FI0wAQQupfB9+GoXb1oHf6bUsKfYKo9LBJFKKdXdBkKSfIkI6D2f2NcAEAx9UUKImdHY5pKP1ulGyVYmAgkdSZsSnVNGxCaf1WwbTdKZ46SFjjPwJDyPXrwHejAD7wPwAAFYcXwswhSsNxD3HAIMqTRM/10l8BgMgsEH4ehNJJCsaDiBvLLfYRB8Rkbpcg5lmOaQKwgeWCU7RToIP3rwLl/LrFYN6fdPKLp4Ahl7ByoAYCIDUDocBFqL4GMtX2gwaqdcIV13PPQoh6ehrHcUgPGY+1R9h7tMVQWMajuL7CrMGKspw02RnZnuzqcZOTcUQoZ+UDotyna4AD+6YB9DXchLd7GD2l6GDOYxV7wPITSnaHafYhzUj+naO/O0792h/cQ5gYBDA0ztBpzaAjcYEw9Fp9QWHoB4dY6gHdpk1Iqt3eeyASgmPtgqnJ+AAnvT5SE+l1D/nzPkUXbh1drnSP7t8524L8UIuQe4/lJLkOPB3RpmsbLknvTafS/9HjzZ7NNc0+sYzgXNPUhs8wir0XaveePaaFr4XQPReIS9E/DUhvuDuhRPsCHuRelVn2F6U4dB/TR4jLbjxvurAMBsG4J3Cv8NK45x7m7POUcoE5H7nX2O5Rg/2HKYMqrw0U+2abtWhg1TYWsQAfhGIDt72PxeS9l4AciIoDQBZuAQAKYTgHJ2n5v5fW97KwmX1I3e3eKKL4jkvfPHMAbIBjgPIOoV6c6WW1FgAKInras1FTenT2bIBu5VAsPNRzD3mLAIAubjQ0M2IoREzkmnKByF4xYkAzDwB0lkPVLRfykCMCij4E/0Em/xPCwFOUskAO6GAI7lAKkGMDRx6DDx3x2EV3Z10A3252Rz5z6VXn3z7zF3ADxwlyohl3dHF2YIYFSAYOJ3oOtzlyoMhAYAYJt1yDTnUwyDVHYIZx4FewV1dxjCZwLAZwL1IIR3IPVxfWXmxhMRoK5zm1dHlFRWDGOw6VnyXhok0OYyVS3Sfx3WgN4HANDkgNgQ9FsJ4GgAz3kxzG7UPQcGQAYBzyUIgDIK9xR2y2YlOXiG0MDz13xyYJC2kBYKtzaUEKJ3ABHyEK2XG0FDHwTDNBygAHb5cCxZDwACjpCFCcowg7V6gAQYhb0Sj31qjMBYA5QN5lBEhLkJAchkY6B8JzRMByZogTAlIxAlBEMsAiBCgyAhiY1DBaICsqsuQWQKtp8qILJED7gONzkUhEhykEw6MkNtFcA+hiBbYgA
 ---
 
 * TOC
 {:toc}
 
-## Motivation for this Course
+## Motivation
 
 * **The "Paper Review" Crisis:** As proofs become increasingly intricate, with
 subtle corner cases, complex inductive steps, probability bounds that are easy
 to hand-wave, it is important to have a foundation that is formally verified
 to ensure that our foundational results are built on bedrock rather than sand.
 * **Lean is Ready for "Real" Math:** Interactive theorem proving is no longer
-a wishful dream. Lean has achieved stunning milestones:
+a wishful dream. Lean has achieved stunning milestones. See for example,
 [Liquid Tensor Experiment](https://github.com/leanprover-community/lean-liquid),
-[Kepler conjecture](https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/formal-proof-of-the-kepler-conjecture/78FBD5E1A3D1BCCB8E0D5B0C463C9FBC),
 [Polynomial Freiman-Ruzsa (PFR) theorem](https://teorth.github.io/pfr/).
-* **The TCS Frontier (Our Opportunity):** While pure mathematics has huge
-coverage in Lean's `Mathlib`, theoretical computer science remains a largely
-unexplored frontier. We hope that through course projects, the students of this
-course would advance the state of Lean for TCS.
 * **Improving AI through formal verification:** Pairing AI with a formal
 verification system can unlock new capabilities. Some relevant references:
 [AlphaProof](https://www.nature.com/articles/s41586-025-09833-y),
@@ -32,6 +27,67 @@ verification system can unlock new capabilities. Some relevant references:
 [Harmonic Aristotle](https://aristotle.harmonic.fun/). See also
 [LeanDojo](https://leandojo.org/) and
 [Open AI Lean Gym](https://github.com/openai/lean-gym).
+
+### Brief History of Formal Verification in Mathematics
+
+Late 19th-century mathematics faced paradoxes (e.g., Russell's Paradox) that
+threatened the validity of all proofs. Russell & Whitehead (in Principia
+Mathematica) attempted to derive all mathematics from logic. They created
+_Type Theory_ to avoid self-contradiction, which as we will see in this course,
+is the "DNA" of Lean's type system. Hilbert sought a "decision procedure" for
+mathematics --- a way to prove any statement via a finite set of rules. This
+formalized the idea that math can be treated as a structured, symbolic language.
+
+Lean is the modern realization of these dreams. It uses Type Theory (Russell)
+to organize data and Formal Logic (Hilbert) to ensure that every step of a proof
+is computationally verified.
+
+Several other proof assistants exist that predate Lean. We highlight some of
+them below (not exhaustive!):
+* [Logic for Computable Functions (LCF)](https://en.wikipedia.org/wiki/Logic_for_Computable_Functions)
+is an interactive automated theorem prover developed by
+[Robin Milner](https://en.wikipedia.org/wiki/Robin_Milner) and collaborators in
+early 1970s, based on the theoretical foundation of
+[logic of computable functions](https://en.wikipedia.org/wiki/Logic_of_Computable_Functions)
+previously proposed by [Dana Scott](https://en.wikipedia.org/wiki/Dana_Scott).
+* [Rocq](https://rocq-prover.org/) (formerly known as "Coq") is an interactive
+theorem prover, using Dependent Type Theory, for mechanised reasoning in
+mathematics, computer science and more. Many notable theorems have been proved
+in Rocq, such as, the
+[Graph Four-Color Theorem](https://github.com/rocq-community/fourcolor),
+[Busy Beaver Function BB(5)](https://arxiv.org/abs/2509.12337). See
+[100 Theorems in Rocq](https://madiot.fr/coq100/) for more examples.
+* [Isabelle](https://isabelle.in.tum.de/) automated theorem prover is a
+higher-order logic (HOL) theorem prover. A large number of results in
+mathematics have been formalized in Isabelle, such as, the
+[Prime Number Theorem](https://arxiv.org/abs/cs/0509025),
+[Kepler's conjecture](https://arxiv.org/abs/1501.02155),
+[Brouwer's Fixed Point Theorem](https://isabelle.in.tum.de/library/HOL/HOL-Analysis/Brouwer_Fixpoint.html),
+etc. See
+[Top 100 Theorems in Isabelle](https://cgi.cse.unsw.edu.au/~kleing/top100/) for
+more examples.
+
+Lean has emerged as a modern favorite for proving theorems owing to the
+following reasons:
+* The development of [Mathlib](https://github.com/leanprover-community/mathlib4),
+which is one massive centralized library developed as a community effort.
+* Lean is a general purpose high-performance functional programming language,
+that also happens to be a theorem prover.
+* Lean's [Metaprogramming](https://leanprover-community.github.io/lean4-metaprogramming-book/)
+framework makes it readily extensible.
+* Lean has better tooling, such as its integration with VS Code, providing
+a smooth "real-time" experience.
+
+### Why this course?
+
+While pure mathematics has huge coverage in Lean's `Mathlib`, theoretical
+computer science remains a largely unexplored frontier. We hope that through
+course projects, the students of this course would advance the state of Lean
+for TCS.
+
+We highlight some such efforts:
+* [CS Lib](https://www.cslib.io/) ([GitHub](https://github.com/leanprover/cslib))
+* [ECC Lib](https://shilun-allan-li.github.io/tcslib/)
 
 ## Installing / Running Lean
 
@@ -42,13 +98,12 @@ There are two main ways to use Lean:
 The best experience is obtained by installing Lean locally, by following a three
 step process listed [here](https://lean-lang.org/install/).
 1. Install [VS Code](https://code.visualstudio.com/).
-2. Install the official **Lean 4** extension in VS Code (search for "lean4" in
-   the Extensions view (`Ctrl+Shift+X`)).
+2. Install the official **Lean 4** extension in VS Code.
 3. Complete the extension setup by following the steps in VSCode.
 
 #### Lean 4 Web
 
-You can also try Lean in your browser without installation using
+You can also try Lean in your browser (without any installation) using
 [Lean 4 Web](https://live.lean-lang.org/).
 
 
@@ -56,41 +111,40 @@ You can also try Lean in your browser without installation using
 
 In Lean, everything is a **term**, and every term has a **type**. This is the core judgment of the system, written as `t : T` (read: "term $t$ has type $T$").
 
-Think of this like checking dimensions in physics or data types in programming, but much more powerful.
+* **Data Examples:**
+    * `5` is a term. Its type is `Nat`.
+    * `"Hello"` is a term. Its type is `String`.
+* **The "Type" of Types:**
+    * `Nat` is a term. Its type is `Type`.
+    * `Type` is a term. Its type is `Type 1`. (It's turtles all the way up\!)
+* **Logical Examples:**
+    * `4 = 4` is a term (a proposition). Its type is `Prop`.
+    * As we will see later, propositions are in fact types. The term
+      `Eq.refl 4` is of type `4 = 4`. (We will get into what this means
+      later.)
 
-  * **Data Examples:**
-      * `5` is a term. Its type is `Nat`.
-      * `"Hello"` is a term. Its type is `String`.
-  * **The "Type" of Types:**
-      * `Nat` is a term. Its type is `Type`.
-      * `Type` is a term. Its type is `Type 1`. (It's turtles all the way up\!)
-  * **Logical Examples:**
-      * `2 + 2 = 4` is a term (a proposition). Its type is `Prop`.
-      * `rfl` (reflexivity) is a term. Its type is `2 + 2 = 4` (it is the *proof*).
-
-## 2\. Transient Commands
+### Transient Commands
 
 These are commands used to query the system. They do not affect the environment permanently.
 
 `#check <term>`: Asks Lean "What is the type of this?" (The most useful command).
 ```lean
-#check 5
--- 5 : Nat
+#check 5    -- 5 : Nat
 ```
 `#eval <term>`: Asks Lean's Virtual Machine to compute the value *Note:* You cannot `#eval` a theorem, only data.
 ```lean
-#eval 2 + 2
--- 4
+#eval 2 + 2    -- 4
 ```
 
 `#print <name>`: Shows internal definition of object.
 
+## 2\. Definitions and Theorems
 
-## 3\. Definitions and Theorems
+Lean distinguishes between *data* (programs we run) and *propositions*
+(statements we prove).
 
-Lean distinguishes between *data* (programs we run) and *propositions* (statements we prove).
-
-**`def`**: Used for data, functions, and definitions where the *computational content* matters.
+**`def`**: Used for data, functions, and definitions where the *computational
+content* matters.
 ```lean
 def functionName (arg1 : Type1) (arg2 : Type2) : ReturnType :=
   body
@@ -98,14 +152,30 @@ def functionName (arg1 : Type1) (arg2 : Type2) : ReturnType :=
 
 For example,
 ```lean
-def addOne (n : Nat) : Nat := n + 1
+def f (x y : Nat) : Nat := x * y
 ```
 
-**`theorem`** (or **`lemma`**): Used for mathematical statements. *Note:* Semantically, `theorem` and `lemma` are identical. We use them to signal intent. We usually don't care *how* a theorem is proved (proof irrelevance), only that it is true.
+**`theorem`** (or **`lemma`**): Used for mathematical statements. Semantically,
+`theorem` and `lemma` are identical. We use them to signal intent. We usually
+don't care *how* a theorem is proved (proof irrelevance), only that it is true.
 ```lean
 theorem theoremName (arg1 : Type1) (arg2 : Type2) : theoremStatement :=
   body
 ```
+
+For example,
+```lean
+theorem inEq (a b c : Nat) (h : b < c) : a + b < a + c := by
+  exact Nat.add_lt_add_left h a
+```
+
+Here, `a`, `b`, `c` have type `Nat` and `h` has type `b < c` (recall,
+propositions are types!) and the required proof is of type `a + b < a + c`.
+In particular, the type of `h` depends on the values of the arguments received
+before. This is what is meant by Dependent Type theory.
+
+The Curry-Howard correspondence captures this direct relationship between
+"proofs and programs" and "propositions and types".
 
 **`example`**: An anonymous definition. Great for scratchpad work or testing a proof without adding it to the global namespace.
 ```lean
@@ -119,7 +189,7 @@ example (arg1 : Type1) (arg2 : Type2) : exampleStatement :=
 abbrev NatPairList := List (Nat × Nat)
 ```
 
-## 4\. Binders: Explicit, Implicit, and Instance
+## 3\. Binders: Explicit, Implicit, and Instance
 
 This is the machinery that allows Lean to be concise.
 
@@ -164,7 +234,7 @@ Square brackets tell Lean: "Look in your database of known classes to find this.
 If we try to write a generic addition function:
 
 ```lean
-def add_generic {α : Type} (a b : α) : α := a + b -- ERROR!
+def genericAdd {α : Type} (a b : α) : α := a + b -- ERROR!
 ```
 
 Lean complains: "I don't know if type `α` supports addition\!"
@@ -172,18 +242,20 @@ Lean complains: "I don't know if type `α` supports addition\!"
 **Solution:**
 
 ```lean
-def add_generic {α : Type} [Add α] (a b : α) : α := a + b
+def genericAdd {α : Type} [Add α] (a b : α) : α := a + b
 ```
 
-When we call `add_generic 5 3`, Lean looks for an "Instance" that explains how `Nat` supports `Add`.
+When we call `genericAdd 5 3`, Lean looks for an "Instance" that explains how
+`Nat` supports `Add`.
 
------
-
-## 5\. Structure and Inductive Types (Data Structures)
+## 4\. Structure and Inductive Types (Data Structures)
 
 We can define our own types from scratch using `structure` and `inductive`.
 
-### Structure ("Product") types
+### Structure ("Product" or "And") types
+
+A `structure` defines a type that is the product of multiple types. Below, we
+provide an example of a `structure` and its corresponding methods.
 
 ```lean
 structure Rectangle where
@@ -206,23 +278,70 @@ def r : Rectangle := { width := 2.0, height := 3.0 }
 #eval r.perimeter   -- 10.0000
 ```
 
-### Inductive ("Sum") types
+### Inductive ("Sum" or "Or") types
 
-**Example: A Binary Tree**
+#### Enumerative Types
+
+The simplest use case of an `inductive` type is to define an enumerative type.
 
 ```lean
-inductive BinTree (α : Type) where
-  | leaf : BinTree α
-  | node : BinTree α → α → BinTree α → BinTree α
-
-open BinTree
-
--- A tree containing the numbers 1 and 2
-def myTree : BinTree Nat :=
-  node leaf 1 (node leaf 2 leaf)
+inductive Day where
+  | sunday
+  | monday
+  | tuesday
+  | wednesday
+  | thursday
+  | friday
+  | saturday
 ```
 
-## 6\. Motivating Example: Formalizing a Theorem
+This defines a type `Day` which takes one of 7 possible values.
+
+#### Recursive types
+
+However, a more interesting case is that of `inductive` types that are defined
+recursively. In particular, the type `Nat` of natural numbers is defined as
+follows in Lean
+
+```lean
+inductive Nat where
+  | zero               -- "zero" is a Nat
+  | succ : Nat → Nat   -- "succ k" is a Nat for any k : Nat
+```
+
+This defines terms of `Nat.zero` (equivalent to `0`),
+`Nat.zero.succ` (equivalent to `1`),
+`Nat.zero.succ.succ` (equivalent to `2`), etc. For example, you can check
+this using
+
+```lean
+#eval Nat.zero.succ = 1      -- true
+```
+
+Next, we provide an example for how to define $\\{0, 1\\}^*$ as an `inductive`
+type.
+
+```lean
+inductive BinStr where
+  | eps
+  | zero: BinStr → BinStr
+  | one: BinStr -> BinStr
+
+#check BinStr.eps              -- corresponds to empty string
+#check BinStr.eps.zero         -- corresponds to “0”
+#check BinStr.eps.zero.one     -- corresponds to “01”
+```
+
+We can operate on `inductive` types using `match ... with`, as shown in the
+following example, for computing $S(n) := \sum_{k=0}^n k$.
+```lean
+def sumFirstN (n : Nat) : Nat :=
+    match n with
+    | Nat.zero => 0
+    | Nat.succ k => sumFirstN k + k + 1
+```
+
+## 5\. Some Examples in Theorem Formalization
 
 Let's look at how we translate a math problem into Lean.
 
@@ -242,7 +361,12 @@ theorem fermatsLastTheorem
 :
   a^n + b^n ≠ c^n
 := by
+  sorry
 ```
+
+`sorry` is a placeholder to tell Lean that we will be filling in the proof
+later. The proof is not complete if it has a `sorry`, but Lean stops complaining
+when it sees a `sorry`.
 
 ### Sum of squares of first $n$ natural numbers
 To formalize
@@ -257,33 +381,31 @@ we need:
 
 ```lean
 /--
-  Sum of first n natural numbers.
+  sumFirstN(n) = sum_{k=0}^n k
 -/
 def sumFirstN (n : Nat) :=
   match n with
   | 0 => 0
-  | k + 1 => sumUptoN k + k
+  | k + 1 => sumFirstN k + k + 1
 
 /--
-  Identity: sum_{i=0}^{n-1} i = n * (n - 1) / 2
+  Identity: sum_{k=0}^{n} k = n * (n + 1) / 2
 -/
-theorem sumOfFirstNFormula (n : Nat) :
-  2 * sumFirstN n = n * (n - 1) := by
-  sorry -- Proof left as an exercise
+theorem sumOfFirstNFormula (n : Nat) : 2 * sumFirstN n = n * (n + 1) := by
+  sorry
 ```
 
-Or let's consider something more general.
-
-$$\sum_{i=0}^n i^2 = \frac{n(n+1)(2n+1)}6$$
+Or let's consider something more general:
+$\sum_{k=0}^n k^2 = \frac{n(n+1)(2n+1)}6$
 
 ```lean
 /--
- Sum of f(k) for k = 0, 1, 2, ... , n
+ sumSeq(f, n) = sum_{k=0}^n f(k)
 -/
 def sumSeq {α : Type} [Add α] (f : Nat → α) (n : Nat) :=
   match n with
   | 0 => f 0
-  | Nat.succ d => sumSeq f d + f n
+  | d + 1 => sumSeq f d + f (d + 1)
 
 def square (x : Nat) := x * x
 
@@ -331,39 +453,12 @@ def applyN (f : Nat → Nat) (d n : Nat) : Nat :=
   The Collatz conjecture: For all n > 0, there exists d such that
   f^d(n) = 1, for the Collatz map f.
 -/
-theorem collatz_conjecture (n : Nat) (h : n > 0) :
+theorem collatzConjecture (n : Nat) (h : n > 0) :
   ∃ d : Nat, applyN collatzMap d n = 1 := by
   sorry
 ```
 
-## Side notes
-
-These are some advanced notes that can be skipped for now (or addressed only if asked).
-
-**1. "Is there anything else?" regarding Transient commands:**
-
-  * `#reduce <term>`: stronger than `#eval`. It uses the kernel to reduce terms to their normal form.
-    * *Warning:* `#reduce` is trustworthy but slow. Don't run `#reduce` on large numbers\!
-  * `#synth`: "Synthesize". Useful for debugging instances. e.g., `#synth Add Nat` checks if Lean knows how to add numbers.
-  * `#check_failure`: Useful for teaching. It succeeds only if the term causes an error.
-
-**2. "What are other keywords? Is it possible to define one's own?"**
-
-  * **Other standard keywords:** `inductive` (for types), `structure` (for records/classes), `class` (for type classes), `axiom` (to postulate truths without proof—dangerous\!), `opaque` (a constant with a hidden definition).
-
-```lean
-axiom two_plus_two_equals_five_ax : 2 + 2 = 5
-
-theorem two_plus_two_equals_five : 2 + 2 = 5 := by
-  apply two_plus_two_equals_five_ax
-```
-
-  * **Custom keywords:** Yes, Lean is fully extensible. You can write your own keywords and syntax (DSLs) using Lean's metaprogramming framework (`macro`, `syntax`, `elab`). However, this is an advanced topic (Lecture 10+).
-
-
-
-
-## 7\. Introduction to Simple Tactics
+## 6\. Introduction to Simple Tactics
 
 ### rfl (Reflexivity)
 
@@ -382,8 +477,6 @@ example (a : Nat) : a = a := by
   rfl
 ````
 
----
-
 ### intro (Introducing Hypotheses)
 
 The `intro` tactic moves premises from the goal into the local context.
@@ -399,8 +492,6 @@ example (p q : Prop) : p → q → p := by
   exact h_p
 ```
 
----
-
 ### exact (Exact Match)
 
 The `exact` tactic closes the goal by providing a term whose type **exactly matches** the goal.
@@ -414,8 +505,6 @@ The `exact` tactic closes the goal by providing a term whose type **exactly matc
 example (p : Prop) (h : p) : p := by
   exact h
 ```
-
----
 
 ### apply (Backward Reasoning)
 
@@ -432,8 +521,6 @@ example (p q : Prop)
   exact h_p
 ```
 
----
-
 ### rw (Rewrite)
 
 The `rw` tactic rewrites terms using an equality hypothesis.
@@ -449,8 +536,6 @@ example (a b c : Nat)
   rw [h1]
   exact h2
 ```
-
----
 
 ### simp (Simplifier)
 
@@ -469,7 +554,11 @@ example (p : Prop) : p ∧ True ↔ p := by
   simp
 ```
 
----
+While `simp` automatically figures out which rule to use to simplify, it is
+good practice to be aware of which rule is precisely being used.
+This can be done by writing `simp?`, which points out the rule being used in
+the InfoView. In the above example, it is `simp [Nat.add_zero]` and
+`simp [and_true]` respectively.
 
 ### cases (Case Analysis)
 
@@ -493,8 +582,6 @@ example (n : Nat) : n = 0 ∨ n ≠ 0 := by
       cases h
 ```
 
----
-
 ### have (Intermediate Goals)
 
 The `have` tactic introduces and proves a local lemma inside a proof.
@@ -511,8 +598,6 @@ example (p q : Prop) (hp : p) (hpq : p → q) : q := by
     exact hp
   exact hq
 ```
-
----
 
 ### induction (Inductive Proofs)
 
@@ -531,8 +616,6 @@ example (n : Nat) : 0 + n = n := by
   | succ n ih =>
       rw [Nat.add_succ, ih]
 ```
-
----
 
 ### constructor (Constructing Data)
 
@@ -553,13 +636,11 @@ example (p q : Prop)
   it makes goal structure explicit, the proof will not be affected if removed. -/
 ```
 
-## 8. Natural Numbers
+## 7. Natural Numbers
 
 In Lean 4, natural numbers are defined inductively, forming the foundation for arithmetic proofs. This section covers the definition, core axioms, basic operations, and fundamental theorems essential for proving properties about numbers.
 
----
-
-### 8.1 Inductive Definition
+### 7.1 Inductive Definition
 
 The set of natural numbers ($\mathbb{N}$) is defined as an inductive type with two constructors: a base case and a successor function.
 
@@ -574,9 +655,7 @@ inductive Nat where
 
 **Intuition:** Every natural number is either `0` or the successor of another natural number.
 
----
-
-### 8.2 The Peano Axioms
+### 7.2 The Peano Axioms
 
 The inductive definition of `Nat` in Lean satisfies the Peano axioms, which characterize the natural numbers:
 
@@ -591,9 +670,7 @@ The inductive definition of `Nat` in Lean satisfies the Peano axioms, which char
   if $P(n) \Rightarrow P(S(n))$ for all $n$,
   then $P$ holds for all natural numbers.
 
----
-
-### 8.3 Basic Operations
+### 7.3 Basic Operations
 
 Standard arithmetic operations are defined recursively on the structure of `Nat`.
 
@@ -618,9 +695,7 @@ Defined as repeated multiplication:
 * $n^0 = 1$
 * $n^{\text{succ } m} = (n^m) * n$
 
----
-
-### 8.4 Fundamental Theorems
+### 7.4 Fundamental Theorems
 
 These theorems are frequently used in proofs to rewrite terms into canonical forms.
 
@@ -681,9 +756,7 @@ Nat.mul_add (a b c : Nat) : a * (b + c) = a * b + a * c
 Nat.add_mul (a b c : Nat) : (a + b) * c = a * c + b * c
 ```
 
----
-
-### 8.5 Useful Tactics for `Nat`
+### 7.5 Useful Tactics for `Nat`
 
 * **`simp`**
   Automatically simplifies goals using lemmas marked with the `@[simp]` attribute (e.g. `Nat.add_zero`).
@@ -704,8 +777,7 @@ Nat.add_mul (a b c : Nat) : (a + b) * c = a * c + b * c
 * **`linarith`**
   Solves goals involving linear arithmetic inequalities.
 
-
-### 8.6 Examples
+### 7.6 Examples
 Example of using **`simp`** with `Nat` properties:
 ```lean
 example (a b c : Nat) : a + b + c = b + (a + c) := by

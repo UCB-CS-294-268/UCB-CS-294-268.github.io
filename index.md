@@ -59,6 +59,11 @@ Book by [Jeremy Avigad](https://www.andrew.cmu.edu/user/avigad/),
 [Patrick Massot](https://www.imo.universite-paris-saclay.fr/~patrick.massot/en/).
 - [The Mechanics of Proof](https://hrmacbeth.github.io/math2001/):
 Book by [Heather Macbeth](https://www.ma.imperial.ac.uk/~hmacbeth/).
+- [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/):
+Book by [Jeremy Avigad](https://www.andrew.cmu.edu/user/avigad/), 
+[Leonardo de Moura](https://leodemoura.github.io/), 
+[Soonho Kong](https://soonhokong.github.io/), 
+and [Sebastian Ullrich](https://sebasti.a.nullri.ch/).
 
 Other similar courses:
 - [Proving theorems in Lean](https://yuvalfilmus.cs.technion.ac.il/courses/?crid=1777):

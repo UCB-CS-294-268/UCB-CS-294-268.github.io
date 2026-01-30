@@ -15,7 +15,7 @@ title: Proving TCS and Math Theorems in Lean
 **TA:** [Shilun (Allan) Li](https://shilun-allan-li.github.io/)  
 **Office hours:** 
 <br>Venkat: TBD
-<br>Shilun: Friday 15:00-16:00 (Evans 741)
+<br>Shilun: Friday 15:00-16:00 (SODA 411)
 
 * TOC
 {:toc}

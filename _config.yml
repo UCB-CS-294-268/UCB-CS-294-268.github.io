@@ -33,6 +33,8 @@ kramdown:
   toc_levels: 2..3  # only include H2 (##) and H3 (###) in the TOC
 
 collections:
+  drafts:
+    output: true
   lectures:
     output: true
     sort_by: date
@@ -43,6 +45,8 @@ collections:
 theme: minima
 plugins:
   - jekyll-feed
+
+future: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -80,6 +80,8 @@ Let's walk through some examples!
 
 Acknowledgement: Course by Yuvul Filmus
 https://yuvalfilmus.cs.technion.ac.il/courses/?crid=1777
+
+Solutions: https://github.com/YuvalFilmus/Exercises/blob/main/Exercises/SolutionWeek1.lean
 -/
 
 lemma imp_1 (A B : Prop) : A → (B → A) := by

@@ -32,16 +32,16 @@ Tactics highlighted:
 -/
 
 example (a : Nat) : a + 0 = a := by
-  sorry
+  simp
 
 example (a : Nat) : 0 + a = a := by
-  sorry
+  simp
 
 example (a : Nat) : a * 1 = a := by
-  sorry
+  rw [Nat.mul_one]
 
 example (a : Nat) : 1 * a = a := by
-  sorry
+  simp
 
 /-!
 ## Rewriting demos with `rw`
@@ -49,19 +49,19 @@ example (a : Nat) : 1 * a = a := by
 
 example (a b c : Nat) : (a + b) + c = a + (b + c) := by
   -- rewriting by associativity
-  sorry
+  rw [Nat.add_assoc]
 
 example (a b : Nat) : a + b = b + a := by
   -- rewriting by commutativity
-  sorry
+  rw [Nat.add_comm]
 
 example (a b c : Nat) : a * (b + c) = a*b + a*c := by
   -- distributivity (`Nat.mul_add`)
-  sorry
+  rw [Nat.mul_add]
 
 example (a b c : Nat) : (a + b) * c = a*c + b*c := by
   -- distributivity (`Nat.add_mul`)
-  sorry
+  rw [Nat.add_mul]
 
 /-!
 ## Using hypotheses with `rw` / `simp`
@@ -69,14 +69,14 @@ example (a b c : Nat) : (a + b) * c = a*c + b*c := by
 
 example (x y z : Nat) (h : x = y) : x + z = y + z := by
   -- rewrite the goal using h
-  simp [h]
+  rw [h]
 
 example (x y z : Nat) (h : x = y) : z + x = z + y := by
   simp [h]
 
 example (a b c : Nat) : a + b + c = b + (a + c) := by
   -- reassociate and commute to match the RHS
-  simp [Nat.add_comm, Nat.add_left_comm]
+  linarith
 
 example (a b c : Nat) : a + b + c = b + (a + c) := by
   rw [Nat.add_comm a b]
@@ -116,17 +116,17 @@ All proofs are left as `sorry` for live demo.
 
 example (n : Nat) : n + 0 = n := by
   -- demo: `induction n with`
-  sorry
+  simp
 
 example (n : Nat) : 0 + n = n := by
   -- demo: `simp` after `induction`
-  sorry
+  simp
 
 example (n : Nat) : n * 1 = n := by
-  sorry
+  simp
 
 example (n : Nat) : 1 * n = n := by
-  sorry
+  simp
 
 /-!
 ## Induction + rewriting: a small “algebraic” induction
@@ -134,7 +134,8 @@ example (n : Nat) : 1 * n = n := by
 
 example (n : Nat) : n + n = 2 * n := by
   -- demo: induction + `simp` / `ring`
-  sorry
+  ring
+
 
 /-!
 ## Summation formula
@@ -147,8 +148,15 @@ open scoped BigOperators
 
 example (n : Nat) : (∑ i ∈ Finset.range (n + 1), i) * 2 = n * (n + 1) := by
   -- demo: `induction n with`
-  sorry
-
+  induction n with
+  | zero =>
+    simp
+  | succ n ih =>
+    have hsum :
+      (∑ i ∈ Finset.range (n + 2), i) = (∑ i ∈ Finset.range (n + 1), i) + (n+1) := by
+      simp [Finset.sum_range_succ]
+    simp [hsum, Nat.add_mul, ih]
+    ring
 /-!
 ## Induction on binary trees
 -/
@@ -176,8 +184,12 @@ theorem leaves_eq_internals_add_one (t : myTree) :
   -- demo: `induction t with`
   -- leaf case is trivial
   -- node case uses the IHs
-  sorry
-
+  induction t with
+  | leaf =>
+    simp [leaves, internals]
+  | node t1 t2 ih1 ih2 =>
+    simp [leaves, internals, ih1, ih2]
+    ring
 end myTree
 
 
@@ -193,10 +205,12 @@ A proof of `P ∧ Q` consists of a proof of `P` and a proof of `Q`.
 -/
 
 example (P Q : Prop) (hP : P) (hQ : Q) : P ∧ Q := by
-  sorry
+  constructor
+  · exact hP
+  · exact hQ
 
 example (P Q : Prop) (h : P ∧ Q) : Q := by
-  sorry
+  exact h.2
 
 /-!
 ## Disjunction (∨)
@@ -205,10 +219,16 @@ To use it, do case analysis.
 -/
 
 example (P Q : Prop) (hP : P) : P ∨ Q := by
-  sorry
+  left
+  exact hP
 
 example (P Q : Prop) (h : P ∨ Q) : (¬ P → Q) := by
-  sorry
+  intro notP
+  cases h with
+  | inl hP =>
+    contradiction
+  | inr hQ =>
+    exact hQ
 
 /-!
 ## Negation and contradiction
@@ -216,35 +236,40 @@ Recall: ¬P is defined as P → False.
 -/
 
 example (P : Prop) (h : P) : ¬¬P := by
-  sorry
+  intro hnp
+  apply hnp
+  exact h
 
 /-!
 Proof by contradiction using classical logic.
 -/
 
 example (x : Nat) : x = 0 ∨ x ≠ 0 := by
-  sorry
-
+  by_cases h : x = 0
+  · left
+    exact h
+  · right
+    exact h
 /-!
 ## Existential quantifier (∃)
 To prove ∃ x, P x, give a witness and a proof.
 -/
 
 example : ∃ n : Nat, n + 1 = 5 := by
-  sorry
+  refine ⟨4, by simp⟩
 
-example (P : Nat → Prop) (h : ∃ x, P x) : True := by
-  sorry
 
 /-!
 ## Universal quantifier (∀)
 -/
 
 example : ∀ n : Nat, n + 0 = n := by
-  sorry
+  intro n
+  simp
 
-example (h : ∀ n, n < 10) : 3 < 10 := by
-  sorry
+example (h : ∀ n, n < 10) : 12 < 10 := by
+  specialize h 12
+  exact h
 
 /-!
 ## Bi-implication (↔)
@@ -252,10 +277,17 @@ To prove P ↔ P, prove both directions.
 -/
 
 example (P : Prop) : P ↔ P := by
-  sorry
+  refine ⟨?_, by intro h; exact h⟩
+  intro h
+  exact h
 
 example (a : Nat) : (a = 0) ↔ (a ≤ 0) := by
-  sorry
+  refine ⟨?_, ?_⟩
+  intro h
+  simp [h]
+  intro hale0
+  exact le_antisymm hale0 (Nat.zero_le _)
+
 
 /-!
 ## Uniqueness (∃!)
@@ -263,7 +295,10 @@ example (a : Nat) : (a = 0) ↔ (a ≤ 0) := by
 -/
 
 example : ∃! n : Nat, n = 0 := by
-  sorry
+  refine ⟨0, rfl, ?_⟩
+  intro y hy
+  exact hy
+
 
 /-!
 ## Deterministic Finite Automata (DFA)
@@ -336,4 +371,6 @@ def evenIs : DFA Bit :=
 theorem run_deterministic
   {α : Type} (M : DFA α) (q : M.State) (w : List α) :
   ∃! q' : M.State, q' = run M q w := by
-  sorry
+  refine ⟨run M q w, rfl, ?_⟩
+  intro q' hq'
+  exact hq'

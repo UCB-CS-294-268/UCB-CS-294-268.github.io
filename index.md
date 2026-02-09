@@ -75,7 +75,7 @@ Adapted from *Mathematics in Lean* and the
 [Lean for the Curious Mathematician 2023 workshop](https://lftcm2023.github.io/).
 
 Miscellaneous:
-- [Loodle!](https://loogle.lean-lang.org/): Search engine for Lean 4.
+- [Loogle!](https://loogle.lean-lang.org/): Search engine for Lean 4.
 - [mathlib4](https://leanprover-community.github.io/mathlib4_docs/Mathlib)
 documentation.
 - Lean community [Zulip channel](https://leanprover.zulipchat.com/) for

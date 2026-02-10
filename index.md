@@ -14,7 +14,7 @@ title: Proving TCS and Math Theorems in Lean
 **Guest Lecturer:** [Pritish Kamath](https://pritishkamath.github.io)  
 **TA:** [Shilun (Allan) Li](https://shilun-allan-li.github.io/)  
 **Office hours:** 
-<br>Venkat: TBD
+<br>Venkat: By Appointment
 <br>Shilun: Friday 15:00-16:00 (SODA 411)
 
 * TOC
@@ -46,6 +46,14 @@ Final Project 60%
 <!-- - [Problem Set 1 (Lean file)](/LeanSource/PSets/PSet1.lean) -->
 - **PS1 (Due 02/05)**:
   [[Download]](/Psets/pset1.zip)
+
+## AI policy
+You are welcome to use any AI tool to ask **general questions** about Lean4 syntax, tactics, and mathlib theorem usage.
+
+However, you **may not** copy homework problems into AI tools or ask AI to produce homework solutions, and you may not submit AI-generated homework answers as your own work.
+
+For the **final project**, you are welcome to use any AI tool without restriction.
+
 
 ## Additional References
 

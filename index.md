@@ -44,8 +44,14 @@ Final Project 60%
 
 ## Problem Sets
 <!-- - [Problem Set 1 (Lean file)](/LeanSource/PSets/PSet1.lean) -->
+### Problem Set Mathlib Project Folder [[Download]](/psets/pset.zip)
 - **PS1 (Due 02/05)**:
-  [[Download]](/Psets/pset1.zip)
+  [[View On Github]](https://github.com/ucb-lean-course-sp26/ucb-lean-course-sp26.github.io/tree/main/psets/pset1.lean)
+  [[Download]](/psets/pset1.lean)
+  [[Solutions]](https://github.com/ucb-lean-course-sp26/ucb-lean-course-sp26.github.io/tree/main/psets/pset1sol.lean)
+- **PS2 (Due 02/19)**:
+  [[View On Github]](https://github.com/ucb-lean-course-sp26/ucb-lean-course-sp26.github.io/tree/main/psets/pset2.lean)
+  [[Download]](/psets/pset2.lean)
 
 ## AI policy
 You are welcome to use any AI tool to ask **general questions** about Lean4 syntax, tactics, and mathlib theorem usage.
